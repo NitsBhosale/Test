@@ -32,7 +32,7 @@ app.get('/oauth/_callback', function(req, res) {
     if(!err) {
       console.log('Access Token: ' + resp.access_token);
       app.locals.oauthtoken = resp.access_token;
-      app.locals.lightningEndPointURI = "https://unilever--cgdev.lightning.force.com";
+      app.locals.lightningEndPointURI = "https://unilever--cgdev.cs85.lightning.force.com";
       res.redirect('/home');
     } else {
       console.log('Error: ' + err.message);
